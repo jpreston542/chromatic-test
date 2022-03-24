@@ -34,7 +34,11 @@ const Button = React.forwardRef(
       onClick={onClick}
       startIcon={startIcon}
       endIcon={endIcon}
-      sx={{ marginX: marginX ? 1 : 0, borderRadius: 20 }}
+      sx={{
+        marginX: marginX ? 1 : 0,
+        borderRadius: 5,
+        border: "5px solid salmon"
+      }}
     >
       {children}!!
     </MuiButton>
