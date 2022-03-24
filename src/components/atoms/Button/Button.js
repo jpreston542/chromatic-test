@@ -17,9 +17,9 @@ const Button = React.forwardRef(
       endIcon,
       type,
       marginX,
-      testId,
+      testId
     },
-    ref,
+    ref
   ) => (
     <MuiButton
       ref={ref}
@@ -34,11 +34,15 @@ const Button = React.forwardRef(
       onClick={onClick}
       startIcon={startIcon}
       endIcon={endIcon}
-      sx={{ marginX: marginX ? 1 : 0 }}
+      sx={{
+        marginX: marginX ? 1 : 0,
+        borderRadius: 5,
+        border: "5px solid salmon"
+      }}
     >
-      {children}
+      {children}!!
     </MuiButton>
-  ),
+  )
 );
 
 Button.propTypes = {
@@ -53,7 +57,7 @@ Button.propTypes = {
   startIcon: PropTypes.node,
   endIcon: PropTypes.node,
   marginX: PropTypes.bool,
-  testId: PropTypes.string,
+  testId: PropTypes.string
 };
 
 Button.defaultProps = {
@@ -67,7 +71,7 @@ Button.defaultProps = {
   startIcon: null,
   endIcon: null,
   marginX: false,
-  testId: "Button-root",
+  testId: "Button-root"
 };
 
 export default Button;
