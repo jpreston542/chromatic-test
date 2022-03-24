@@ -37,7 +37,7 @@ const Button = React.forwardRef(
       sx={{
         marginX: marginX ? 1 : 0,
         borderRadius: 5,
-        border: "5px solid salmon"
+        border: "5px solid cornflowerblue"
       }}
     >
       {children}!!
