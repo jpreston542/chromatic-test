@@ -1,0 +1,12 @@
+@startuml
+
+class Button
+class Form
+class Input
+class Modal
+
+Form *-- Button
+Input *-- Button
+Modal *-- Button
+
+@enduml
