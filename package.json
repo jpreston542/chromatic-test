@@ -1,7 +1,6 @@
 {
-  "name": "sb-deploy",
-  "version": "0.1.0",
-  "private": true,
+  "name": "el-testing-react-components",
+  "version": "1.0.5",
   "dependencies": {
     "@emotion/react": "^11.8.2",
     "@emotion/styled": "^11.8.1",
@@ -65,5 +64,8 @@
     "@storybook/testing-library": "^0.0.9",
     "chromatic": "^6.5.3",
     "webpack": "^5.70.0"
+  },
+  "publishConfig": {
+    "registry": "http://44.203.96.83:8081/repository/npm-test/"
   }
 }
